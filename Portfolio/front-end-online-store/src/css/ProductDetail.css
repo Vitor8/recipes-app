@@ -1,0 +1,41 @@
+.product-detail-container {
+  border: 2px solid aqua;
+  box-shadow: 2px 2px 2px 2px rgb(214, 206, 206);
+  display: flex;
+  flex-direction: column;
+  height: 550px;
+  margin-left: 20px;
+  margin-top: 5px;
+  width: 350px;
+}
+
+.product-detail-container:hover {
+  box-shadow: 2px 2px 2px 2px rgb(138, 132, 132);
+}
+
+.product-detail-img {
+  height: 300px;
+  width: 100%;
+}
+
+.product-detail-text-content-container {
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  height: 215px;
+  justify-content: space-between;
+  padding: 5%;
+}
+
+.product-detail-add-button {
+  background: none;
+  background-color: whitesmoke;
+  border: none;
+  border: 1px solid aqua;
+  margin: 1%;
+  padding: 1%;
+}
+
+.product-detail-add-button:hover {
+  background-color: rgb(73, 73, 216);
+}

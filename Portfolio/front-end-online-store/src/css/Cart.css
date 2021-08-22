@@ -1,0 +1,76 @@
+.product-cart-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1%;
+}
+
+.product-cart-card-container {
+  align-items: center;
+  border: 2px solid aqua;
+  box-shadow: 2px 2px rgb(175, 173, 173);
+  display: flex;
+  font-size: 13px;
+  justify-content: space-between;
+  margin: 1%;
+  text-align: justify;
+  width: 400px;
+}
+
+.product-cart-card-container:hover {
+  box-shadow: 2px 2px rgb(94, 93, 93);
+}
+
+.product-cart-image {
+  height: 100%;
+  width: 200px;
+}
+
+.product-cart-content-text {
+  padding: 2%;
+}
+
+.product-cart-total-value {
+  margin: 10px;
+}
+
+.buttons-cart-quant {
+  background: none;
+  background-color: whitesmoke;
+  border: none;
+  border: 1px solid aqua;
+  margin: 1%;
+  padding: 1%;
+  width: 20px;
+}
+
+.buttons-cart-quant:hover {
+  background-color: rgb(73, 73, 216);
+}
+
+.buttons-cart-remove {
+  background: none;
+  background-color: whitesmoke;
+  border: none;
+  border: 1px solid aqua;
+  margin: 1%;
+  padding: 1%;
+}
+
+.buttons-cart-remove:hover {
+  background-color: rgb(73, 73, 216);
+}
+
+.end-container {
+  border: 2px solid aqua;
+  box-shadow: 2px 2px rgb(175, 173, 173);
+  font-size: 13px;
+  margin-left: 27%;
+  margin-top: 10%;
+  padding: 5%;
+  text-align: center;
+  width: 400px;
+}
+
+.end-container:hover {
+  box-shadow: 2px 2px rgb(94, 93, 93);
+}

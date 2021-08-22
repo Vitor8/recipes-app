@@ -1,0 +1,23 @@
+.categories-list-container {
+  border: 1px solid aqua;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 5px;
+  margin-top: 10px;
+  width: 13%;
+}
+
+.categories-list-button {
+  background: none;
+  background-color: whitesmoke;
+  border: none;
+  border: 1px solid aqua;
+  font-size: 11px;
+  height: 35px;
+  padding: 0;
+}
+
+.categories-list-button:hover {
+  background-color: rgb(73, 73, 216);
+}
