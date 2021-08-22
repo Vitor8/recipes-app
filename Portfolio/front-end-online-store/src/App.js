@@ -7,8 +7,8 @@ import NotFound from './pages/NotFound';
 function App() {
   return (
     <Switch>
-      <Route exact path="https://vitor8.github.io/front-end-online-store/" component={ Home } />
-      <Route path="https://vitor8.github.io/front-end-online-store/cart" component={ Cart } />
+      <Route exact path="vitor8.github.io/front-end-online-store/" component={ Home } />
+      <Route path="vitor8.github.io/front-end-online-store/cart" component={ Cart } />
       <Route component={ NotFound } />
     </Switch>
   );
