@@ -87,7 +87,7 @@ function Cart({ cartProducts, addProduct, decreaseQuantProduct, removeProduct, r
             Fazer nova compra
           </button>
            </div>}
-      { shouldBackHome && <Redirect to="vitor8.github.io/front-end-online-store/" /> }
+      { shouldBackHome && <Redirect to="/" /> }
     </div>
   );
 }
