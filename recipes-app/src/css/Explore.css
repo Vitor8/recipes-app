@@ -1,0 +1,64 @@
+.explore-card-container {
+  align-content: space-around;
+  background-color: rgb(209, 205, 205);
+  border-radius: 5px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin-top: 10px;
+  padding-top: 20px;
+
+  /* height: 535px;
+  overflow: scroll; */
+}
+
+.card-ingredients {
+  align-content: center;
+  align-items: center;
+  background-color: rgb(128, 115, 115);
+  border: 1px solid black;
+  border-radius: 5px;
+  display: flex;
+  flex-flow: column;
+  height: 200px;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  text-align: center;
+  width: 100px;
+}
+
+.explore-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 525px;
+  justify-content: center;
+  width: 100%;
+}
+
+.button-explore {
+  background-color: rgb(92, 89, 89);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  display: inline-block;
+  font-size: 20px;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  width: 300px;
+}
+
+.name-recipe-area {
+  color: black;
+}
+
+.dropdown-areas {
+  text-align: center;
+}
+
+.explore-select-dropdown {
+  width: 200px;
+}

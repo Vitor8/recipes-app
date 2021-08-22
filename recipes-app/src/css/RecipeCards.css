@@ -1,0 +1,36 @@
+.library-card-container {
+  align-content: space-around;
+  background-color: rgb(209, 205, 205);
+  border-radius: 5px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin-bottom: 50px;
+  margin-top: 10px;
+  padding-top: 20px;
+
+  /* height: 475px;
+  overflow: scroll; */
+}
+
+.card-container {
+  align-content: center;
+  align-items: center;
+  background-color: rgb(128, 115, 115);
+  border: 1px solid black;
+  border-radius: 5px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  width: 100px;
+}
+
+.p-text {
+  font-size: 13px;
+  margin: 0;
+  text-align: center;
+}
+
