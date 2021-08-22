@@ -17,8 +17,8 @@ function Header({ setQuery, setCategoryId, setProductDetailId, cartProducts, sho
     <header className="header-container">
       { shouldShowHeaderSearchBar
         && <HeaderSearchBar setQuery={ setQuery } setCategoryId={ setCategoryId } setProductDetailId={ setProductDetailId } />}
-      <Link to="/" className="links-header">Home</Link>
-      <Link to="/cart" className="links-header">Cart</Link>
+      <Link to="https://vitor8.github.io/front-end-online-store/" className="links-header">Home</Link>
+      <Link to="https://vitor8.github.io/front-end-online-store/cart" className="links-header">Cart</Link>
       <p>{ quantProductCart }</p>
     </header>
   );
