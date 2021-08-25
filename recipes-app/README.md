@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+# recipes-app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Aplicação em React que simula um aplicativo de receitas. A manipulação do estado global da aplicação é feita usando Context API.
 
-## Available Scripts
+Passo a Passo para a instalção do projeto:
 
-In the project directory, you can run:
+- Fork o repositório
+- Clone o repositório: git clone git@github.com:Vitor8/recipes-app.git
+- Entre na pasta: cd recipes-app
+- Entre em uma outra pasta: cd recipes-app
+- Instale as seguintes dependências:
+	- npm install
+- Rode a aplicação com: npm-start
 
-### `npm start`
+O projeto foi pensado para ser uma aplicação em mobile. Logo, para uma melhor visualização,utilize a resolução 360 x 640.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+O app faz diversas requisições a duas API´s de receitas:
+  - 1: TheMealDB (https://www.themealdb.com/api.php)
+  - 2: The CockTailDB (https://www.thecocktaildb.com/api.php)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+O usuário pode realizar diferentes buscas por diversas telas de receitas de comidas e bebidas.
 
-### `npm test`
+1 - Telas principais de Meals e Drinks
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  - Nas telas iniciais de comidas e bebidas, no header, ao clicar no símbolo de buscar, o usuário pode buscar por nome do ingrediente, nome da receita e primeira
+  letra da receita.
+  - Ao clicar no card da receita, é renderizado uma página com os detalhes daquela receita.
+  - Ao descer a tela, quando o usuário clica no botão 'Iniciar Receita' é renderizado uma nova página, com o passo a passo e as instruções para fazer a receita. 
+    Ao clicar no checkbox dos ingredientes, a informação é salva no Local Storage. Logo, quando o usuário voltar para as direntes receitas de bebidas e comidas 
+    inicializadas, o usuário começa de onde terminou.
+  - Quando todos os CheckBoxs de Ingredientes estiverem completos, o botão 'Finalizar Receita' é habilitado. Ao ser clicado, é renderizado uma nova tela, onde
+  o usuário pode ver todas as receitas feitas.
+  
+2 - Telas de Perfil
 
-### `npm run build`
+  - Ao navegar pela aplicação, toda vez que o usuário termina qualquer receita, é possível ver todas as receitas finalizadas indo até a tela de perfil, e clicando
+  em 'Receitas Finalizadas'.
+  - O usuário também pode favoritar e desfavoritar receitas. As receitas favoritadas também ficam na tela de perfil, ao clicar em 'Receitas Favoritadas'.
+  
+3 - Telas de Exploração
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  - Por fim, quando o usuário não tiver certeza qual receita fazer, no 'Footer' da aplicação, ao clicar no ícone do meio, é possível ir para a sessão
+  de explorar receitas. 
+  - É possível escolher explorar tanto por comidas quanto por bebidas.
+  - Em comidas, as opções de exploração são: 'Por Ingredientes', 'Por Local de Origem' e uma receita randômica na opção 'Me Surpreenda!'.
+  - Em bebidas, devido a uma limitação da API de bebidas, as opções são apenas: 'Por Ingredientes' e 'Me Surpreenda'.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
